@@ -14,6 +14,43 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
+    overflow: hidden;
+}
+
+.imagens{
+    width: 100%;
+    position: relative;
+}
+
+img {
+    height: 12vh;
+    width: 15vh;
+    position: absolute;
+    top: 50%; /* Mantém todas as imagens alinhadas verticalmente */
+    transform: translateY(-50%);
+    opacity: 0; /* Começa invisível */
+    animation: mover 4s linear infinite; /* Duração da animação de 8 segundos */
+}
+
+/* Definindo os delays para cada imagem */
+.imagem1 {
+    animation-delay: 0s; /* Começa imediatamente */
+}
+
+.imagem2 {
+    animation-delay: 1s; /* Começa após 4 segundos */
+}
+
+.imagem3 {
+    animation-delay: 2s; /* Começa após 8 segundos */
+}
+
+.imagem4 {
+    animation-delay: 3s; /* Começa após 12 segundos */
+}
+
+header{
+    margin-top: 10vh;
 }
 
 /* Estiliza os títulos h1 */
@@ -88,7 +125,7 @@ section button:hover {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #252020; /* Cor do texto */
+    color: #f1de2d; /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -170,5 +207,28 @@ footer {
 
     footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
+
+@keyframes mover {
+    0% {
+        opacity: 0; /* Invisível antes de entrar na tela */
+        transform: translateX(-150%); /* Fora da tela à esquerda */
+    }
+    10% {
+        opacity: 1; /* Visível quando começa a entrar na tela */
+        transform: translateX(-150%);
+    }
+    50% {
+        transform: translateX(50vw); /* Centro da tela */
+        opacity: 1;
+    }
+    90% {
+        transform: translateX(100vw); /* Próximo de sair da tela */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(150vw); /* Fora da tela à direita */
+        opacity: 0; /* Invisível após sair da tela */
     }
 }

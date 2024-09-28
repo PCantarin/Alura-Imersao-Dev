@@ -4,58 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://miro.medium.com/v2/resize:fit:880/1*yZ9AQD0sQMwxV1yykly4pw.png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Jogos Clássicos</title>
 </head>
 
 <body>
+    <div class="imagens">
+        <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2016/03/si-px.gif" alt="Imagem 1" class="imagem-movimento imagem1">
+        <img src="https://media.tenor.com/UkvleU1dQK4AAAAi/2d-mario-running.gif" alt="Imagem 2" class="imagem-movimento imagem2">
+        <img src="https://miro.medium.com/v2/resize:fit:800/1*K7OShBezdTibtZqVXNYmng.gif" alt="Imagem 3" class="imagem-movimento imagem3">
+        <img src="https://images.gamebanana.com/img/ico/sprays/megamanx2.gif" alt="Imagem 4" class="imagem-movimento imagem4">
+    </div>
     <header>
         <h1>Jogos Clássicos</h1>
     </header>
     <main>
         <section>
-            <input type="text" placeholder="Digite o nome do jogo">
-            <button>Pesquisar</button>
+            <input type="text" placeholder="Busque um jogo" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
         </section>
 
-        <section class="resultados-pesquisa">
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
             <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">
-                        Super Mario World
-                    </a>
-                </h2>
-                <p class="descricao-meta">Super Mario World é um dos jogos de plataforma mais amados de todos os tempos,
-                    lançado originalmente para o Super Nintendo
-                    Entertainment System (SNES) em 1990. Nessa aventura épica, os encanadores mais famosos do mundo,
-                    Mario e Luigi, são transportados
-                    para a mágica Dinosaur Land, um reino repleto de desafios, segredos e criaturas pré-históricas.</p>
+                <h2>Super Mario World</h2>
+                <p class="descricao-meta">Super Mario World é um dos jogos de plataforma mais amados de todos os tempos, lançado originalmente para o Super Nintendo Entertainment System (SNES) em 1990. Nessa aventura épica, os encanadores mais famosos do mundo, Mario e Luigi, são transportados para a mágica Dinosaur Land, um reino repleto de desafios, segredos e criaturas pré-históricas.</p>
                 <a href="https://pt.wikipedia.org/wiki/Super_Mario_World">Mais informações</a>
             </div>
 
             <div class="item-resultado">
-            <h2>
-                <a href="#" target="_blank">
-                    The Legend of Zelda: Ocarina of Time
-                </a>
-            </h2>
-            <p class="descricao-meta">
-                Considerado um dos maiores jogos de todos os tempos, Ocarina of Time revolucionou o gênero de
-                ação-aventura.
-                Embarque em uma jornada épica através do tempo, controlando Link em sua busca para salvar Hyrule.
-            </p>
-            <a href="https://pt.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time">Mais informações</a>
+                <h2>The Legend of Zelda: Ocarina of Time</h2>
+                <p class="descricao-meta">
+                    Considerado um dos maiores jogos de todos os tempos, Ocarina of Time revolucionou o gênero de ação-aventura. Embarque em uma jornada épica através do tempo, controlando Link em sua busca para salvar Hyrule.
+                </p>
+                <a href="https://pt.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time">Mais informações</a>
             </div>
 
             <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">
-                        Final Fantasy VII
-                    </a>
-                </h2>
+                <h2>Final Fantasy VII</h2>
                 <p class="descricao-meta">
-                    Um marco nos RPGs, Final Fantasy VII te leva a um mundo futurista dominado pela corporação Shinra.
-                    Junte-se a Cloud Strife e seus companheiros em uma jornada para salvar o planeta.
+                    Um marco nos RPGs, Final Fantasy VII te leva a um mundo futurista dominado pela corporação Shinra. Junte-se a Cloud Strife e seus companheiros em uma jornada para salvar o planeta.
                 </p>
                 <a href="https://pt.wikipedia.org/wiki/Final_Fantasy_VII">Mais informações</a>
             </div>
@@ -63,9 +51,11 @@
     </main>
     <footer>
         <p>2024 - Jogos Clássicos. Todos os direitos reservados</p>
-        <p>Entre em contato pelo email: mauricio.siqueira@educ.indaiatuba.sp.gov.br</p>
+        <p>Entre em contato pelo email: pcantarin@gmail.com</p>
     </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
